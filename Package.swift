@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftUI-CollectionView",
+    name: "SwiftUICollectionView",
     platforms: [.iOS(.v13)],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "SwiftUI-CollectionView",
-            targets: ["SwiftUI-CollectionView"]),
+            name: "SwiftUICollectionView",
+            targets: ["SwiftUICollectionView"]),
     ],
     dependencies: [
         .package(url: "https://github.com/devQQ/SwiftUIToolbox", .upToNextMajor(from: "1.0.0"))
@@ -19,10 +19,10 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
-            name: "SwiftUI-CollectionView",
+            name: "SwiftUICollectionView",
             dependencies: ["SwiftUIToolbox"]),
         .testTarget(
-            name: "SwiftUI-CollectionViewTests",
-            dependencies: ["SwiftUI-CollectionView"]),
+            name: "SwiftUICollectionViewTests",
+            dependencies: ["SwiftUICollectionView"]),
     ]
 )
